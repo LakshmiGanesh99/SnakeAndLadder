@@ -5,9 +5,10 @@ public class snake{
 	
 	public static void main(String[] args) {
 		
+		int turnCount = 0;
 		int position = 0;
-		System.out.println("Your start position is: " + position);
 		
+		System.out.println("Your start position is: " + position);
 		
 		while(position<100) {
 			int dieNumber = ((int) Math.floor(Math.random()*10) % 6) + 1;
@@ -27,7 +28,11 @@ public class snake{
 			default :
 				position = position + 0;
 			}
+			turnCount += 1;
 		}
+		
 		System.out.println("Congragulations! You have reached the position " + position);
+		System.out.println("The die was played " + turnCount + " number of times.");
+
 	}
 }
