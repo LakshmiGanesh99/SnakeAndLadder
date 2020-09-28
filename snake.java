@@ -9,7 +9,7 @@ public class snake{
 		System.out.println("Players current position is: " + position);
 		
 		int dieNumber = ((int) Math.floor(Math.random()*10) % 6) + 1;
-		System.out.println("The number rolled on die is " + dieNumber);
+		System.out.println("The number rolled is " + dieNumber);
 
 		int playOption = ((int) Math.floor(Math.random()*10) % 2);
 		switch(playOption) {
@@ -25,6 +25,6 @@ public class snake{
 			position = position + 0;
 				
 		}
-		System.out.println("Your Current position is: " + position);
+		System.out.println("Players Current position is: " + position);
 	}
 }
