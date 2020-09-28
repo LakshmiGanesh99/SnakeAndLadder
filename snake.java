@@ -6,7 +6,7 @@ public class snake{
 	public static void main(String[] args) {
 		
 		int position = 0;
-		System.out.println("Your current position: " + position);
+		System.out.println("Players current position is " + position);
 		
 		
 		while(position<=100) {
@@ -26,6 +26,6 @@ public class snake{
 				position = position + 0;
 			}		
 		}
-		System.out.println("Your Current position is: " + position);
+		System.out.println("Players Current position is: " + position);
 	}
 }
